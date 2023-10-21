@@ -1,0 +1,13 @@
+echo "Enter 'music' for audio only or to listen to music.\nEnter 'video' to watch videos"
+
+read choice
+
+if [ $choice="music" ]
+then
+    ./ytm
+elif [ $choice="video" ]
+then
+    ./ytv
+else
+    echo "Invalid choice"
+fi
