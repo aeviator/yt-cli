@@ -30,5 +30,6 @@ Note that ytv and ytm are shell script (with extension .sh). You may choose to u
 Requires the following dependencies:
 - yt-dlp
 - fzf
+- ffmpeg
 - rofi (optional)
 - dmenu (optional)
