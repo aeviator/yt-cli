@@ -22,7 +22,7 @@ In order to install, simply `sudo cp ./yt* /usr/bin/`
 Note that ytv and ytm are shell script (with extension .sh). You may choose to use these scripts as is, or hack away to create the experience you want.
 
 Requires the following dependencies:
-    - yt-dlp
-    - fzf
-    - rofi (optional)
-    - dmenu (optional)
+- yt-dlp
+- fzf
+- rofi (optional)
+- dmenu (optional)
