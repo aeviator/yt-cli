@@ -13,7 +13,7 @@ Change into the directory where you cloned this repo and run the following comma
 
 `./ytm`
 
-### Instal
+### Install
 
 In order to install, simply `sudo cp ./yt* /usr/bin/`
 
