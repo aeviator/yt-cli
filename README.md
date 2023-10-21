@@ -1,6 +1,12 @@
 # YT-CLI
 ## Watch YouTube Videos from the Comfort of Your Terminal
 
+### Using the CLI
+
+You may choose to use the cli for simplicity. To use the cli, simply execute:
+
+`./yt-cli`
+
 ### Watching Videos
 
 Change into the directory where you cloned this repo and run the following command:
