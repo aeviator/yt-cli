@@ -1,9 +1,9 @@
 #!/bin/bash
 # search videos and playlists on youtube and play them in mpv, without an API 
 # usage:
-# yt					asks for input in stdin, prompts using fzf
-# yt search query		takes input from the passed arg, prompts using fzf
-# yt -r					takes input and prompts using rofi
+# ytv					asks for input in stdin, prompts using fzf
+# ytv search query		takes input from the passed arg, prompts using fzf
+# ytv -r					takes input and prompts using rofi
 
 flags=""
 promptcmd="fzf --with-nth=2..-1"
@@ -50,7 +50,7 @@ playlistids=$(
 # if there are videos, append them to list
 [ -n "$videoids" ] && ids="$ids$videoids"
 # url prefix for videos and playlists
-videolink="https://youtu.be/"
+videolink="https://youtube.com/"
 playlink="https://youtube.com/playlist?list="
 # prompt the results to user infinitely until they exit (escape)
 while true; do
@@ -61,9 +61,9 @@ while true; do
 	)
 	case $id in
 		# 11 digit id = video
-		???????????) clear; $videolink="https://yewtu.be/"; mpv "$videolink$id" "$flags";;
+		???????????) clear; videolink="https://yewtu.be/"; mpv "$videolink$id" "$flags";;
 		# 34 digit id = playlist
-		??????????????????????????????????) clear; $playlink="https://yewtu.be"; mpv "$playlink$id" "$flags";;
+		??????????????????????????????????) clear; playlink="https://yewtu.be"; mpv "$playlink$id" "$flags";;
 		"") exit ;;
 		*) echo "invalid id - $id" ;;
 	esac
