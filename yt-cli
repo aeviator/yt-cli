@@ -2,12 +2,12 @@ echo "Enter 'music' for audio only or to listen to music.\nEnter 'video' to watc
 
 read choice
 
-if [ $choice="music" ]
+if [ $choice = "music" ]
 then
-    ./ytm
-elif [ $choice="video" ]
+    ytm
+elif [ $choice = "video" ]
 then
-    ./ytv
+    ytv
 else
     echo "Invalid choice"
 fi
